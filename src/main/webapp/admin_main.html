@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 화면 최적화 -->
+<meta name="viewport" content="width-device-width", initial-scale="1">
+<!-- 루트 폴더에 부트스트랩을 참조하는 링크 -->
+<link rel="stylesheet" href="admin_main.css">
+<title>소사모터스 관리자 페이지</title>	
+</head>
+<body id="all_content">
+    <div class="section1">
+        <div class="main_nav">
+            <div>
+                <ul class="sign">
+                    <li><a href="login.jsp">로그인</a></li>
+                    <li> | </li>
+                    <li><a href="signup.jsp">회원가입</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href=main.jsp><img class="logo_size" src="logo.png"></a>
+            </div>
+            <div>
+                <ul class="menu">
+                    <li><a href="main.jsp">홈페이지</a></li>
+                    <li>|</li>
+                    <li><a href="bbs.jsp">관리자 메인화면</a></li>
+                    <li>|</li>
+                    <li><a href="bbs.jsp">게시판</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="memberlist">
+        <fieldset>
+            <legend>회원 목록</legend>
+            <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+				<thead>
+					<tr>
+						<th style="background-color: #eeeeee; text-align: center;">회원번호</th>
+						<th style="background-color: #eeeeee; text-align: center;">아이디</th>
+						<th style="background-color: #eeeeee; text-align: center;">닉네임</th>
+						<th style="background-color: #eeeeee; text-align: center;">이름</th>
+						<th style="background-color: #eeeeee; text-align: center;">권한</th>
+						<th style="background-color: #eeeeee; text-align: center;">이메일</th>
+						<th style="background-color: #eeeeee; text-align: center;">전화번호</th>
+						<th style="background-color: #eeeeee; text-align: center;"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>dbstndh12</td>
+						<td>GALAXY_NOTE</td>
+						<td>윤수오</td>
+						<td>admin</td>
+						<td>dbstndh12@naver.com</td>
+						<td>010-9339-7484</td>
+						<td><a href="member.jsp?USER_NUM=<%= list.get(i).getUSER_NUM() %>"><button>수정</button></a>	
+					</tr>
+				</tbody>
+			</table>
+        </fieldset>
+        </div>
+    </div>
+    <div class="footer">
+        <p>v.Beta.0.0.1 | Sosa_Motors_Company | TEL. 1577-7484</p>
+        <p>대표자 : 윤수오 | 사업장 : 경기도 부천시 소사로 56</p>
+        <p>Copyright(c)(주)소사모터스 ALL Rights Reserved</p>
+    </div>
+</body>
+</html>

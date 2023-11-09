@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@font-face 
+{
+    font-family:'InterparkGothic'; /*font 이름*/
+    font-style: 'normal';
+    src: url('InterparkGothicLight.ttf'); /* IE9 Compat Modes */
+}   
+@font-face 
+{
+    font-family:'InterparkGothicBold'; /*font 이름*/
+    font-style: 'normal';
+    src: url('InterparkGothicBold.ttf'); /* IE9 Compat Modes */
+} 
+#all_content{
+    font-family:'InterparkGothicBold';
+    margin:0;
+    width:1920px;
+    height:2000px;
+}
+.section1{
+    margin:0;
+    width:1920px;
+    height:216px;
+    background-color: aquamarine;
+}
+.main_nav{
+    width:1120px;
+    height:216px;
+    margin: 0px 50px 0px 50px;
+    display:block;
+}
+.sign{
+    margin-top:40px;
+    list-style-type:none;
+    float:right;
+}
+.sign li{
+    float:left;
+    padding-left:5px;
+}
+.sign a{
+    text-decoration:none;
+    font-size:15px;
+    color:Black;
+}
+
+.sign a:hover{
+    color:#87CEEB;
+}
+.logo{
+    position:absolute;
+    margin:72px 0px 0px 0px;
+}
+.logo_size{
+    width:40%;
+    height:40%;
+}
+ul{
+    list-style-type:none;
+}
+.menu{
+    position:absolute;
+    list-style-type:none;
+    margin-left:190px;
+    margin-top:160px;
+}
+.menu li{
+    float:left;
+    padding-left:8px;
+    font-size:15pt;
+}
+.menu a{
+    float:left;
+    text-decoration:none;
+    font-size:22px;
+    color:Black;
+}
+
+.menu a.active,.menu a:hover{
+    color:#87CEEB;
+}
+.section2{
+    margin:0;
+    width:1920px;
+    height:1484px;
+    background-color:#F6F8FA;
+}
+.footer{
+    margin:0;
+    width:1920px;
+    height:300px;
+    text-align:center;
+    background-color:#ffffff;
+}
+.memberlist{
+    margin:0px 50px 0px 50px;
+    padding:20px 0px 0px 0px;
+    height:1484px;
+}
